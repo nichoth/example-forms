@@ -7,6 +7,8 @@
     "start": "npm run build-css && npm run serve",
     "serve": "budo index.js:bundle.js --pushstate --dir=public --live -- -dv",
     "build-css": "node-sass --output-style=compressed style.scss > public/style.css",
+    "build-js": "browserify -dv index.js > public/bundle.js",
+    "deploy": "npm run build-js && npm run build-css && surge public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +26,7 @@
   },
   "homepage": "https://github.com/nichoth/example-forms#readme",
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "surge": "^0.21.6"
   }
 }
