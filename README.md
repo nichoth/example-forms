@@ -1,6 +1,6 @@
-# forms example
+http://easy-crowd.surge.sh
 
-easy-crowd.surge.sh
+# forms example
 
 Minimal example of a form with best practices. As much as possible is done in the HTML, but the style for invalid input needs to be done with some JS because we don't want to mark an input as invalid only if the user has focused on it.
 
