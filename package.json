@@ -4,6 +4,9 @@
   "description": "Example of form stuff",
   "main": "index.js",
   "scripts": {
+    "start": "npm run build-css && npm run serve",
+    "serve": "budo index.js:bundle.js --pushstate --dir=public --live -- -dv",
+    "build-css": "node-sass --output-style=compressed style.scss > public/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/nichoth/example-forms/issues"
   },
-  "homepage": "https://github.com/nichoth/example-forms#readme"
+  "homepage": "https://github.com/nichoth/example-forms#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
 }
