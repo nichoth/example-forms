@@ -183,11 +183,3 @@ Array.prototype.forEach.call(inputs, function (input) {
 })
 ```
 
-
-
-   [90mRunning as [4mnichoth@gmail.com[24m[39m[90m (Student)[39m
-
-[90m        project:[39m public
-[90m         domain:[39m [1G[0J[90m         domain:[39m flat-beggar.surge.sh[38G
-   [33mAborted[39m[90m - you do not have permission to publish to [4mflat-beggar.surge.sh[24m[39m
-
